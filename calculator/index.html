@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: navy;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+
+
+    }
+
+
+
+    .display {
+        width: 370px;
+
+    }
+
+    .dis {
+
+        outline: none;
+        border: none;
+        padding: 20px 10px;
+
+    }
+
+    input {
+        width: 370px;
+    }
+
+    #input {
+        text-align: end;
+        font-size: 24px;
+
+    }
+
+    #output {
+        text-align: end;
+        font-size: 20px;
+    }
+
+
+    .box1 {
+        padding: 30px 0px;
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 272px;
+    }
+
+    .box2 {
+        padding: 30px 0px;
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 272px;
+    }
+
+    .box3 {
+        padding: 30px 0px;
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 272px;
+    }
+
+    .box4 {
+        padding: 30px 0px;
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 272px;
+    }
+
+    .box5 {
+        padding: 20px 0px;
+        background-color: gray;
+        text-align: center;
+        position: relative;
+        left: 273px;
+        bottom: 352px;
+        width: 97px;
+        height: 352px;
+
+    }
+
+  
+
+    .box5 div {
+        margin: 29px 0px 27px 0px;
+        padding: 4px;
+    }
+
+    span {
+        padding: 40px;
+        font-size: 25px;
+    }
+
+
+    .delf {
+        padding-left: 30px;
+        font-size: 20px;
+        position: relative;
+        bottom: 15px;
+    }
+</style>
+
+<body>
+    <div class="calculator">
+
+        <div class="display">
+            <input type="text" class="dis" placeholder="DEG" readonly><br>
+            <input type="text" class="dis" id="input"><br>
+            <input type="text" class="dis" id="output">
+        </div>
+
+
+        <div class="keys">
+            <div class="bg">
+
+                <div class="box1">
+                    <div data-key="7" class="key">
+                        <span>7</span>
+                    </div>
+
+                    <div data-key="8" class="key">
+                        <span>8</span>
+                    </div>
+
+                    <div data-key="9" class="key">
+                        <span>9</span>
+                    </div>
+
+
+                </div>
+
+                <div class="box2">
+                    <div data-key="4" class="key">
+                        <span>4</span>
+                    </div>
+
+                    <div data-key="5" class="key">
+                        <span>5</span>
+                    </div>
+
+                    <div data-key="6" class="key">
+                        <span>6</span>
+                    </div>
+
+
+                </div>
+
+                <div class="box3">
+                    <div data-key="1" class="key">
+                        <span>1</span>
+                    </div>
+
+                    <div data-key="2" class="key">
+                        <span>2</span>
+                    </div>
+
+                    <div data-key="3" class="key">
+                        <span>3</span>
+                    </div>
+                </div>
+
+                <div class="box4">
+
+                    <div data-key="." class="key">
+                        <span>.</span>
+                    </div>
+                    <div data-key="0" class="key">
+                        <span>0</span>
+                    </div>
+                    <div data-key="=" class="key operator">
+                        <span>=</span>
+                    </div>
+                </div>
+
+                <div class="box5">
+                    <div data-key="clear" class="key action">
+                        <span class="delf">DEL</span>
+                    </div>
+                    <div data-key="/" class="key operator">
+                        <span>÷</span>
+                    </div>
+
+                    <div data-key="*" class="key operator">
+                        <span>x</span>
+                    </div>
+
+                    <div data-key="-" class="key operator">
+                        <span>-</span>
+                    </div>
+
+                    <div data-key="+" class="key operator">
+                        <span>+</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+  
+    <script src="index.js"></script>
+</body>
+
+</html>
